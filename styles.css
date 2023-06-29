@@ -1,11 +1,16 @@
 body {
-	background-color: #f7760e;
+	background: linear-gradient(
+		90deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(29, 165, 253, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
 	margin: 0;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	height: 100vw;
+	height: 100vh;
 	justify-content: space-between;
 	align-items: center;
 	font-family: "Trebuchet MS", sans-serif;
@@ -23,6 +28,8 @@ header {
 	height: 150px;
 	display: flex;
 	align-items: center;
+	width: 100%;
+	justify-content: center;
 }
 
 .bottom-section {
@@ -30,6 +37,7 @@ header {
 	display: flex;
 	justify-content: center;
 	height: 150px;
+	align-items: flex-start;
 }
 
 .input-container {
@@ -45,9 +53,31 @@ input {
 	padding: 10px;
 	border-radius: 5px;
 	box-shadow: rgb(40, 60, 80) 0 20px 30px -10px;
+	box-sizing: border-box;
 }
 #submit-icon {
 	position: absolute;
 	top: 10px;
 	right: 30px;
+	cursor: pointer;
+}
+
+.images-section {
+	width: 100%;
+	max-width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.image-container {
+	width: 45%;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: rgb(40, 60, 80) 0 20px 30px -10px;
+}
+
+.image-container img {
+	width: 100%;
 }
